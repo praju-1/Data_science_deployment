@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+            background-image: url("https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FyJTIwYmFja2dyb3VuZHN8ZW58MHx8MHx8fDA%3D");
+            background-repeat: no-repeat;
+            /* background-size: 1200px 600px; */
+            background-size: cover;
+        }
+
+        .result-box {
+            display: inline-block;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .result {
+            font-size: 24px;
+            color: #007BFF;
+            margin: 20px 0;
+        }
+
+        .home-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: crimson;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="result-box">
+        <h1>Car Price Prediction</h1>
+        <div class="result">{{ prediction_text }}</div>
+        <a href="{{ url_for('Home') }}" class="home-button">Back to Home</a>
+    </div>
+
+</body>
+
+</html>
